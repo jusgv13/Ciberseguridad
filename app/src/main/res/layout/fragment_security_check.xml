@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.SecurityCheckFragment"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="@string/check_your_awareness"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:padding="20dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+        android:id="@+id/top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="@string/all_five"
+        android:textSize="15sp"
+        android:padding="20dp"
+            android:layout_below="@+id/top"
+        android:layout_centerHorizontal="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@+id/top2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/securitycheckborder"
+
+                android:layout_height="wrap_content"
+                android:requiresFadingEdge="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/heading1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/question_1"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:id="@+id/detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_below="@+id/heading1"
+                    android:textColor="@color/blue"
+                    android:text="@string/q1"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail1"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rb11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:id="@+id/rb12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/no" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="match_parent"
+            android:layout_below="@id/cv1"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginLeft="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/securitycheckborder"
+
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/heading2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/question_2"
+                    android:textColor="@android:color/black"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="24sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/detail2"
+                    android:layout_below="@+id/heading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/blue"
+                    android:text="@string/q2"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail2"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/from_the_mails" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/from_the_text_messages" />
+
+                    <RadioButton
+                        android:id="@+id/correct2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/from_bank_s_official_website_or_app" />
+
+                </RadioGroup>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="match_parent"
+            android:layout_below="@id/cv2"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/securitycheckborder"
+
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/heading3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/question_3"
+                    android:textColor="@android:color/black"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="24sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/detail3"
+                    android:layout_below="@+id/heading3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/blue"
+                    android:text="@string/q3"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail3"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/no" />
+
+                </RadioGroup>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="match_parent"
+            android:layout_below="@id/cv3"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/securitycheckborder"
+
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/heading4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+
+                    android:text="@string/question_4"
+                    />
+
+                <TextView
+                    android:id="@+id/detail4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading4"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/blue"
+                    android:text="@string/q4"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail4"
+                    android:layout_marginTop="10dp">
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/yes" />
+
+
+                </RadioGroup>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv5"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="20dp"
+            android:layout_below="@id/cv4"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/securitycheckborder"
+
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:id="@+id/heading5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+
+                    android:text="@string/question_5"
+                    />
+
+                <TextView
+                    android:id="@+id/detail5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heading5"
+                    android:layout_marginLeft="25dp"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/q5"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail5"
+                    android:layout_marginTop="10dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/yes" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/no" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="50dp"
+                        android:text="@string/sometimes" />
+
+                </RadioGroup>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textFontWeight="70"
+            android:textColor="@color/lightGrey"
+            android:layout_below="@+id/cv5"
+            android:text="@string/submit"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

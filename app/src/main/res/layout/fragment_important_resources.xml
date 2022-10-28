@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ImportantResourcesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textColorLink="@color/black"
+                android:layout_centerHorizontal="true"
+                android:text="@string/cyberswachhtakendra"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardImpLinks1"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/cyberswachhtakendrasecuritytools"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cardImpLinks2"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/cyberattacks"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks4"
+        android:layout_below="@id/cardImpLinks3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/ncpcr"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/cardImpLinks4"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/cyberSandS"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks6"
+        android:layout_below="@id/cardImpLinks5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/studentsecurity"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImpLinks7"
+        android:layout_below="@id/cardImpLinks6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@drawable/border_box">
+
+            <TextView
+                android:id="@+id/link7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:textColorLink="@color/black"
+                android:text="@string/teacherguidelines"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImpLinks8"
+            android:layout_below="@id/cardImpLinks7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:background="@drawable/border_box">
+
+                <TextView
+                    android:id="@+id/link8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textColorLink="@color/black"
+                    android:text="@string/ncpcr"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImpLinks9"
+            android:layout_below="@id/cardImpLinks8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:background="@drawable/border_box">
+
+                <TextView
+                    android:id="@+id/link9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textColorLink="@color/black"
+                    android:text="@string/cybersafetyManual"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImpLinks10"
+            android:layout_below="@id/cardImpLinks9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="40dp"
+            app:cardCornerRadius="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:background="@drawable/border_box">
+
+                <TextView
+                    android:id="@+id/link10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:textColorLink="@color/black"
+                    android:text="@string/infosecawareness"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

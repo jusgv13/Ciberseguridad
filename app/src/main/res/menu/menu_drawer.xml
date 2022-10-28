@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/dosDonts"
+            android:icon="@drawable/ic_dodont"
+             android:title="@string/do_s_and_don_ts" />
+        <item
+            android:id="@+id/impResources"
+            android:icon="@drawable/ic_impresources"
+            android:title="@string/important_resources" />
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_aboutapp"
+            android:title="@string/about_app" />
+
+    </group>
+
+</menu>
